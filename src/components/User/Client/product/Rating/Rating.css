@@ -1,0 +1,25 @@
+.Rating {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 200px;
+	margin: auto;
+	}
+	.rating-box{
+	width: 180px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	}
+	.rating-box .ratings .fa{
+	font-size: 20px;
+	color:#FF9800;
+	float: left;
+	cursor: pointer;
+	}
+	.ratings{
+	margin: 0 auto;
+	}
+	

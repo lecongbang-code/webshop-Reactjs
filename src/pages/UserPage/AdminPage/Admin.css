@@ -1,0 +1,58 @@
+
+.n-input-big1{
+    width: 1000px;
+}
+.n-form-admin{
+    box-shadow: 1.5px 1.5px 1.5px 1.5px #b4b3b3;
+    border-radius: 5px;
+    padding: 15px 15px 15px 15px;
+    background-color: #fff;
+}
+.n-form-admin label{
+    font-weight: bold;
+}
+.n-form-admin input{
+    border: none;
+    border-bottom: 1px solid #5e72e4;
+}
+.n-form-admin textarea{
+    min-height: 150px;
+    max-height: 200px;
+    /* min-width: 1000px; */
+}
+.n-input-file{
+    display: none;
+}
+.n-input-file-img{
+    background-color: #5e72e4;
+    width: 180px;
+}
+.n-ml-800{
+    margin-left: 800px;;
+}
+.n-product-right{
+    float: right;
+}
+.n-product-left{
+    /* display: inline-flex; */
+    float: left;
+}
+.n-mb-20{
+    height: 80px;
+    margin-bottom: 20px;
+}
+.n-modal-overflow{
+    overflow: auto;
+}
+.n-ml-15{
+    margin-left: 20px;
+}
+.n-title{
+    text-align: center;
+    color: #5e72e4
+}
+.n-select-action{
+    background-color: #f4f5f7;
+    min-width: 150px;
+    border-radius: 5px;
+}

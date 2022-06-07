@@ -1,0 +1,6806 @@
+{
+	"info": {
+		"_postman_id": "0e6cd0eb-3d15-423e-9391-f41f355dc4f8",
+		"name": "Commerce SubDomain copy copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Manage Company",
+					"item": [
+						{
+							"name": "UserFollow",
+							"item": [
+								{
+									"name": "Follow",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "JWT {{token}}"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "product",
+													"value": "71",
+													"type": "text",
+													"disabled": true
+												}
+											]
+										},
+										"url": {
+											"raw": "{{Alibaba}}/api/user/followedcompanies/follow?site=itech",
+											"host": [
+												"{{Alibaba}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"followedcompanies",
+												"follow"
+											],
+											"query": [
+												{
+													"key": "site",
+													"value": "itech"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Unfollow",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "JWT {{token}}"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{Alibaba}}/api/user/followedcompanies/unfollow?site=itech",
+											"host": [
+												"{{Alibaba}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"followedcompanies",
+												"unfollow"
+											],
+											"query": [
+												{
+													"key": "site",
+													"value": "itech"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "List DeletedCompany",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/company/deleted/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"company",
+										"deleted",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Social Link",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"facebook\":\"facebook.com/itech/\",\n\t\"instagram\":\"instagram.com/itech/\",\n\t\"twitter\":\"twitter.com/itech/\"\n}"
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/company/add-social-link/7",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"company",
+										"add-social-link",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Company Site",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "store_name",
+											"value": "ITECH23",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "Xindian District, New Taipei City, Taiwan",
+											"type": "text"
+										},
+										{
+											"key": "phone_number",
+											"value": "+61 2 8004 3037",
+											"type": "text"
+										},
+										{
+											"key": "legal_name",
+											"value": "ITECHNOLOGY GROUP PTY LTD",
+											"type": "text"
+										},
+										{
+											"key": "site",
+											"value": "itech",
+											"type": "text"
+										},
+										{
+											"key": "business_license",
+											"value": "12345678948",
+											"type": "text"
+										},
+										{
+											"key": "logo",
+											"value": "",
+											"type": "file"
+										},
+										{
+											"key": "ad_sample",
+											"value": "",
+											"type": "file"
+										},
+										{
+											"key": "about",
+											"value": "Founded in Taiwan in 1997, HTC built its reputation as a behind-the-scenes designer of some of the most popular mobile phones on the market. Since 2006, HTC has sold Android and Windows devices under its own name. Dedicated to creating customised user experiences, HTC has grown to a workforce of over 16,000 and established itself as a global player.\n\nHTC phones are responsible for a number of worldwide and industry firsts. In 1998 HTC began designing the world’s first touch devices; in 2005 HTC built the world’s first 3G Windows smartphone; in 2008, HTC created the world’s first Android smartphone, the HTC Dream and in 2010, HTC produced the world’s first 4G Android Smartphone the HTC Evo.\n\nHTC Australia provides customers with technologically advanced smartphones and tablets. The HTC One M9, HTC Desire and other HTC phones enhance conversations, take high–quality photographs and give users access to a host of apps and downloadable content.",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "6",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "24",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "25",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "27",
+											"type": "text"
+										},
+										{
+											"key": "banner",
+											"value": "",
+											"type": "file"
+										},
+										{
+											"key": "banner",
+											"value": "",
+											"type": "file"
+										},
+										{
+											"key": "plan_id",
+											"value": "25",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/company?site=itech",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"company"
+									],
+									"query": [
+										{
+											"key": "site",
+											"value": "itech"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Account Info",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"company_id\":1\n}\n"
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/company/account-info",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"company",
+										"account-info"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Detail Company Site",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/company?site=itech",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"company"
+									],
+									"query": [
+										{
+											"key": "site",
+											"value": "itech"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Destroy Company",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "store_name",
+											"value": "company 6",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "111 ",
+											"type": "text"
+										},
+										{
+											"key": "phone_number",
+											"value": "12344567",
+											"type": "text"
+										},
+										{
+											"key": "bank_account",
+											"value": "12345678",
+											"type": "text"
+										},
+										{
+											"key": "business_license",
+											"value": "12345678",
+											"type": "text"
+										},
+										{
+											"key": "logo",
+											"value": "adasd",
+											"type": "text"
+										},
+										{
+											"key": "ad_sample",
+											"value": "adsasdas",
+											"type": "text"
+										},
+										{
+											"key": "user",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/company/detail/itech",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"company",
+										"detail",
+										"itech"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "All Group of CompanyID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Alibaba}}/api/company/7/list-productgroup/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"company",
+										"7",
+										"list-productgroup",
+										""
+									]
+								},
+								"description": "list product group ko phan trang"
+							},
+							"response": []
+						},
+						{
+							"name": "Connect Account",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/company/oauth-link",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"company",
+										"oauth-link"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Detail Company",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/company/detail/itech/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"company",
+										"detail",
+										"itech",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Company",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "store_name",
+											"value": "kkkkk",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "Suite 35, Level 2, 330 Wattle Street Ultimo NSW 2007",
+											"type": "text"
+										},
+										{
+											"key": "phone_number",
+											"value": "+61 2 8004 3033",
+											"type": "text"
+										},
+										{
+											"key": "legal_name",
+											"value": "ARC SYSTEM WORK",
+											"type": "text"
+										},
+										{
+											"key": "site",
+											"value": "zup",
+											"type": "text"
+										},
+										{
+											"key": "business_license",
+											"value": "12345678",
+											"type": "text"
+										},
+										{
+											"key": "logo",
+											"value": "",
+											"type": "file"
+										},
+										{
+											"key": "ad_sample",
+											"value": "",
+											"type": "file"
+										},
+										{
+											"key": "about",
+											"value": "We are a fresh, innovative and dynamic IT company. We supply a large range of computer products and services with the latest technology at the best value. We cater for individuals, small and medium-sized businesses, and corporate clients. At www.i-tech.com.au, our bottom line isn't just about dollars and cents. It's about the people we do business with -- our customers, coworkers and community members. We have a long history of providing computing solutions built for business customers -- and we welcome the chance to share our story with you.\n\n\n\nWhether you're a customer, prospective employee, journalist, this part of our site was created to bring you inside our company -- past, present and future. \n\nOn top of our wide range of products, we also offer friendly, helpful, affordable services. We offer an affordable and effective web-design team to create a tailor-make website to specifically suit your particular business needs, offering e-commerce solutions, on-line shop. Networking setup (file, internet and printer sharing) is also available with our experienced networking team. \n\nInternet connection and internet setup is available easily and without a fuss through Swiftdsl. IT training is also available on request for those who are interested to expand their knowledge of the IT industry. \n\nWe accept all major credit cards through our secure server. Alternatively, you can use BPay, a simple and secure way to buy computer products even if you don't have a credit card. ",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "6",
+											"type": "text"
+										},
+										{
+											"key": "banner",
+											"value": "",
+											"type": "file"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/company",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"company"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Stripe Account",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/company/connect",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"company",
+										"connect"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Company",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "store_name",
+											"value": "ITECH23",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "Xindian District, New Taipei City, Taiwan",
+											"type": "text"
+										},
+										{
+											"key": "phone_number",
+											"value": "+61 2 8004 3037",
+											"type": "text"
+										},
+										{
+											"key": "legal_name",
+											"value": "ITECHNOLOGY GROUP PTY LTD",
+											"type": "text"
+										},
+										{
+											"key": "site",
+											"value": "itech",
+											"type": "text"
+										},
+										{
+											"key": "business_license",
+											"value": "12345678948",
+											"type": "text"
+										},
+										{
+											"key": "logo",
+											"value": "",
+											"type": "file"
+										},
+										{
+											"key": "ad_sample",
+											"value": "",
+											"type": "file"
+										},
+										{
+											"key": "about",
+											"value": "Founded in Taiwan in 1997, HTC built its reputation as a behind-the-scenes designer of some of the most popular mobile phones on the market. Since 2006, HTC has sold Android and Windows devices under its own name. Dedicated to creating customised user experiences, HTC has grown to a workforce of over 16,000 and established itself as a global player.\n\nHTC phones are responsible for a number of worldwide and industry firsts. In 1998 HTC began designing the world’s first touch devices; in 2005 HTC built the world’s first 3G Windows smartphone; in 2008, HTC created the world’s first Android smartphone, the HTC Dream and in 2010, HTC produced the world’s first 4G Android Smartphone the HTC Evo.\n\nHTC Australia provides customers with technologically advanced smartphones and tablets. The HTC One M9, HTC Desire and other HTC phones enhance conversations, take high–quality photographs and give users access to a host of apps and downloadable content.",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "6",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "24",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "25",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "25",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "27",
+											"type": "text"
+										},
+										{
+											"key": "banner",
+											"value": "",
+											"type": "file"
+										},
+										{
+											"key": "banner",
+											"value": "",
+											"type": "file"
+										},
+										{
+											"key": "plan_id",
+											"value": "25",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/company/detail/itech",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"company",
+										"detail",
+										"itech"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Company",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/company",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"company"
+									]
+								},
+								"description": "Danh sach cac company k pagination"
+							},
+							"response": []
+						},
+						{
+							"name": "Add Bank",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "company_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "bank_token",
+											"value": "btok_1DMtfsDyifgV66lTCVkZtQ0d",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/company/add-bank",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"company",
+										"add-bank"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Verification Company",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "company_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "city",
+											"value": "Texas",
+											"type": "text"
+										},
+										{
+											"key": "line1",
+											"value": "Texas",
+											"type": "text"
+										},
+										{
+											"key": "postal_code",
+											"value": "2148",
+											"type": "text"
+										},
+										{
+											"key": "state",
+											"value": "NSW",
+											"type": "text"
+										},
+										{
+											"key": "bussiness_name",
+											"value": "PC",
+											"type": "text"
+										},
+										{
+											"key": "bussiness_tax_id",
+											"value": "00000000",
+											"type": "text"
+										},
+										{
+											"key": "dob_day",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "dob_month",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "dob_year",
+											"value": "1984",
+											"type": "text"
+										},
+										{
+											"key": "first_name",
+											"value": "ABC",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "David",
+											"type": "text"
+										},
+										{
+											"key": "photo_id_front",
+											"value": "",
+											"type": "file"
+										},
+										{
+											"key": "bank_token",
+											"value": "btok_1DKeu4DyifgV66lTjd0H4iML",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/company/verification/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"company",
+										"verification",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "My Company",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/company/my-company/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"company",
+										"my-company",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "All My Company",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/company/all-my-company/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"company",
+										"all-my-company",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Group of CompanyID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Alibaba}}/api/company/1/productgroup/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"company",
+										"1",
+										"productgroup",
+										""
+									]
+								},
+								"description": "list product group co phan trang"
+							},
+							"response": []
+						},
+						{
+							"name": "Destroy Company Site",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "store_name",
+											"value": "company 6",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "111 ",
+											"type": "text"
+										},
+										{
+											"key": "phone_number",
+											"value": "12344567",
+											"type": "text"
+										},
+										{
+											"key": "bank_account",
+											"value": "12345678",
+											"type": "text"
+										},
+										{
+											"key": "business_license",
+											"value": "12345678",
+											"type": "text"
+										},
+										{
+											"key": "logo",
+											"value": "adasd",
+											"type": "text"
+										},
+										{
+											"key": "ad_sample",
+											"value": "adsasdas",
+											"type": "text"
+										},
+										{
+											"key": "user",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/company?site=arc",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"company"
+									],
+									"query": [
+										{
+											"key": "site",
+											"value": "arc"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Check Company Account ",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"company_id\":2\n}"
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/company/check-verification/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"company",
+										"check-verification",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Manage Product",
+					"item": [
+						{
+							"name": "UserFollow",
+							"item": [
+								{
+									"name": "List Follow",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "JWT {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{Alibaba}}/api/user/followedproducts/list/",
+											"host": [
+												"{{Alibaba}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"followedproducts",
+												"list",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Follow",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "JWT {{token}}"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "product",
+													"value": "71",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{Alibaba}}/api/user/followedproducts/follow/71/",
+											"host": [
+												"{{Alibaba}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"followedproducts",
+												"follow",
+												"71",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Unfollow",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "JWT {{token}}"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "product",
+													"value": "15",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{Alibaba}}/api/user/followedproducts/unfollow/32/",
+											"host": [
+												"{{Alibaba}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"followedproducts",
+												"unfollow",
+												"32",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Product options",
+							"item": [
+								{
+									"name": "Destroy options",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "JWT {{token}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "product_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "site",
+													"value": "itech",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{Alibaba}}/api/user/product/options/41/destroy",
+											"host": [
+												"{{Alibaba}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"product",
+												"options",
+												"41",
+												"destroy"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update options",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "JWT {{token}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "product_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "package_id",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "site",
+													"value": "itech",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{Alibaba}}/api/user/product/options/41/update",
+											"host": [
+												"{{Alibaba}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"product",
+												"options",
+												"41",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Add product options",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "JWT {{token}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "product_id",
+													"value": "12",
+													"type": "text"
+												},
+												{
+													"key": "package_id",
+													"value": "3",
+													"type": "text"
+												},
+												{
+													"key": "site",
+													"value": "itech",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{Alibaba}}/api/user/product/options/create",
+											"host": [
+												"{{Alibaba}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"product",
+												"options",
+												"create"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Gallery",
+							"item": [
+								{
+									"name": "Update gallery",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "JWT {{token}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "product_id",
+													"value": "2",
+													"type": "text"
+												},
+												{
+													"key": "source",
+													"value": "",
+													"type": "file"
+												},
+												{
+													"key": "site",
+													"value": "ITECH",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{Alibaba}}/api/user/product/gallery/2/update",
+											"host": [
+												"{{Alibaba}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"product",
+												"gallery",
+												"2",
+												"update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete gallery",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "JWT {{token}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "product_id",
+													"value": "2",
+													"type": "text"
+												},
+												{
+													"key": "site",
+													"value": "ITECH",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{Alibaba}}/api/user/product/gallery/4/delete",
+											"host": [
+												"{{Alibaba}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"product",
+												"gallery",
+												"4",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Add gallery",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "JWT {{token}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "product_id",
+													"value": "3",
+													"type": "text"
+												},
+												{
+													"key": "source",
+													"value": "",
+													"type": "file"
+												},
+												{
+													"key": "site",
+													"value": "ITECH",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{Alibaba}}/api/user/product/gallery/create",
+											"host": [
+												"{{Alibaba}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"product",
+												"gallery",
+												"create"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Reports",
+							"item": [
+								{
+									"name": "Report product",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "JWT {{token}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "message",
+													"value": "Spam",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{Alibaba}}/api/product/1/reports/create",
+											"host": [
+												"{{Alibaba}}"
+											],
+											"path": [
+												"api",
+												"product",
+												"1",
+												"reports",
+												"create"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Favorites",
+							"item": [
+								{
+									"name": "Delete favorite",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "JWT {{token}}"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{Alibaba}}/api/user/favorites/136/delete",
+											"host": [
+												"{{Alibaba}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"favorites",
+												"136",
+												"delete"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "List favorites",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "JWT {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{Alibaba}}/api/user/favorites/list?page=1&page_size=10",
+											"host": [
+												"{{Alibaba}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"favorites",
+												"list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "page_size",
+													"value": "10"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Add favorites",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "JWT {{token}}"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "product",
+													"value": "107",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{Alibaba}}/api/user/favorites/create",
+											"host": [
+												"{{Alibaba}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"favorites",
+												"create"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Destroy Product",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/product/53",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"product",
+										"53"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Product",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "ASASAS",
+											"type": "text"
+										},
+										{
+											"key": "model",
+											"value": " MZ-76E500BW",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "150",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "The SSD to trust\n The newest edition to the world™s best-selling* SATA SSD series, the Samsung 860 EVO. Specially designed for mainstream PCs and laptops, with the latest V-NAND and a robust algorithm-based controller, this fast and reliable SSD comes in a wide range of compatible form factors and capacities",
+											"type": "text"
+										},
+										{
+											"key": "in_stock",
+											"value": "100",
+											"type": "text"
+										},
+										{
+											"key": "vat",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "color",
+											"value": "black",
+											"type": "text"
+										},
+										{
+											"key": "tag",
+											"value": "laptop",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"value": "",
+											"type": "file"
+										},
+										{
+											"key": "full_description",
+											"value": "abc",
+											"type": "text"
+										},
+										{
+											"key": "downloads",
+											"value": "abc",
+											"type": "text"
+										},
+										{
+											"key": "faq",
+											"value": "abc",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "6",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "19",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "productgroup",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/product/?site=itech",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"product",
+										""
+									],
+									"query": [
+										{
+											"key": "site",
+											"value": "itech"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search My product",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\":\"\",\n\t\"productgroup\":\"10\"\n\n}"
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/product/search-my-product/7/?page_size=10",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"product",
+										"search-my-product",
+										"7",
+										""
+									],
+									"query": [
+										{
+											"key": "page_size",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "My Product",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/product/my-product/?ordering=id&order=DESC",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"product",
+										"my-product",
+										""
+									],
+									"query": [
+										{
+											"key": "ordering",
+											"value": "id"
+										},
+										{
+											"key": "order",
+											"value": "DESC"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Popular Products",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/product/popular_products",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"product",
+										"popular_products"
+									]
+								},
+								"description": "10 query"
+							},
+							"response": []
+						},
+						{
+							"name": "Detail Product",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/product/136/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"product",
+										"136",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Popular Products Copy",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/product/random_products",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"product",
+										"random_products"
+									]
+								},
+								"description": "10 query"
+							},
+							"response": []
+						},
+						{
+							"name": "List Feature Product",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/product/feature_products",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"product",
+										"feature_products"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Product",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/product/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"product",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Product With Company ID & Group ID",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/product/list-product-group/1/1",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"product",
+										"list-product-group",
+										"1",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "My Product Company",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/product/my-product/1/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"product",
+										"my-product",
+										"1",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "All Product Of My Company",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/product/all-my-product/30/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"product",
+										"all-my-product",
+										"30",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Product",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "G.SKILL SNIPER X F4-3200C16D-32GSXFB 32GB (2 X 16GB) DDR4 3200MHZ CL16 1.35V DESKTOP MEMORY F4-3200C16D-32GSXFB",
+											"type": "text"
+										},
+										{
+											"key": "model",
+											"value": "F4-3200C16D-32GSXFB",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "557.00",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "G.SKILL Sniper X series is the latest DDR4 memory engineered for the ultimate gaming experience, with enhanced memory performance for smoother gameplay and faster load times. Uniquely designed with a camouflage pattern and sleek minimalistic heatspreaders in multiple color variations to match your system color scheme, this memory kit is the ideal choice for a customized gaming build or for a high performance upgrade.",
+											"type": "text"
+										},
+										{
+											"key": "in_stock",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "rating",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "vat",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "color",
+											"value": "black",
+											"type": "text"
+										},
+										{
+											"key": "tag",
+											"value": "ram, memory, itech, G.Skill, gskill, 16GB, ddr4, INTERNET TECHNOLOGY",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"value": "",
+											"type": "file"
+										},
+										{
+											"key": "full_description",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "downloads",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "faq",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "productgroup",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "category",
+											"value": "24",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "category",
+											"value": "25",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/product/5/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"product",
+										"5",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List DeletedProduct",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/product/deleted/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"product",
+										"deleted",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "User Feed",
+					"item": [
+						{
+							"name": "List Company Feed By User",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/userfeeds/list",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"userfeeds",
+										"list"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Manage CompanyFeed",
+					"item": [
+						{
+							"name": "User",
+							"item": [
+								{
+									"name": "List",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "JWT {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{Alibaba}}/api/user/companyfeed/",
+											"host": [
+												"{{Alibaba}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"companyfeed",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Delete CompanyFeed",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"company\":\"1\",\n  \"modified_info\":\"update a company\"\n}"
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/companyfeed/83/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"companyfeed",
+										"83",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update CompanyFeed",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "product_id",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "modified_info",
+											"value": "test",
+											"type": "text"
+										},
+										{
+											"key": "url",
+											"value": "",
+											"type": "file"
+										},
+										{
+											"key": "is_active",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/companyfeed/83/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"companyfeed",
+										"83",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create CompanyFeed",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "company",
+											"value": "83",
+											"type": "text"
+										},
+										{
+											"key": "product_id",
+											"value": "111",
+											"type": "text"
+										},
+										{
+											"key": "modified_info",
+											"value": "Sale Off 50%",
+											"type": "text"
+										},
+										{
+											"key": "is_active",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "url",
+											"value": "",
+											"type": "file"
+										},
+										{
+											"key": "name",
+											"value": "Big sale off in 2 day",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/companyfeed/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"companyfeed",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Detail CompanyFeed",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/companyfeed/90/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"companyfeed",
+										"90",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List CompanyFeed",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/companyfeed/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"companyfeed",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Manage ProductFeed",
+					"item": [
+						{
+							"name": "User",
+							"item": [
+								{
+									"name": "GetUserFeed",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "JWT {{token}}"
+											}
+										],
+										"url": {
+											"raw": "{{Alibaba}}/api/user/productfeed/",
+											"host": [
+												"{{Alibaba}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"productfeed",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Delete ProductFeed",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"product\":\"10\",\n  \"modified_info\":\"created Gaming Laptop MSI\"\n}"
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/productfeed/156/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"productfeed",
+										"156",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update ProductFeed",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"product\":\"10\",\n  \"modified_info\":\"created a product name Gaming Laptop MSI\"\n}"
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/productfeed/3/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"productfeed",
+										"3",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create ManualFeed",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": true
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "site",
+											"value": "itech",
+											"type": "text"
+										},
+										{
+											"key": "product_id",
+											"value": "125",
+											"type": "text"
+										},
+										{
+											"key": "modified_info",
+											"value": "sale off",
+											"type": "text"
+										},
+										{
+											"key": "is_active",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "url",
+											"value": "",
+											"type": "file"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/productfeed/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"productfeed",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Detail ProductFeed",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/productfeed/2/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"productfeed",
+										"2",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List ProductFeed",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/productfeed/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"productfeed",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update ManualFeed",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "product_id",
+											"value": "125",
+											"type": "text"
+										},
+										{
+											"key": "modified_info",
+											"value": "test",
+											"type": "text"
+										},
+										{
+											"key": "url",
+											"value": "",
+											"type": "file"
+										},
+										{
+											"key": "is_active",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/productfeed/157/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"productfeed",
+										"157",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Manage Subcription",
+					"item": [
+						{
+							"name": "Update Subscription",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "company_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "plan_id",
+											"value": "4",
+											"type": "text"
+										},
+										{
+											"key": "trial_period_days",
+											"value": "10",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/subscription/change-plan",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"subscription",
+										"change-plan"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cancel Subscription",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "company_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/subscription/cancel-plan",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"subscription",
+										"cancel-plan"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Subscription For Product (test)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "company_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "plan_id",
+											"value": "4",
+											"type": "text"
+										},
+										{
+											"key": "trial_period_days",
+											"value": "20",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/subscription/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"subscription",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Subscription",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/subscription/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"subscription",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": " Payment",
+					"item": [
+						{
+							"name": "Check Payment Source",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/payment/check-payment-source",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"payment",
+										"check-payment-source"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Payment Source",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"source\":\"tok_visa\"\n}"
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/payment/create-payment-source",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"payment",
+										"create-payment-source"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Retrieve Fee",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/payment/retrieve-fee",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"payment",
+										"retrieve-fee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Detach Card",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/payment/detach-card",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"payment",
+										"detach-card"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "f5d2f98d-321a-4d34-8965-0e513cccb370",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "8687c138-5c7b-45d4-b2bb-08f944f99b99",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Orders",
+					"item": [
+						{
+							"name": "Create order",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"products\": [\n\t\t{\n\t\t\t\"id\": 4,\n\t\t\t\"qty\": 3\n\t\t},\n\t\t{\n\t\t\t\"id\": 5,\n\t\t\t\"qty\": 10\n\t\t}\n\t],\n\t\"email\": \"adward0511@gmail.com\",\n\t\"phone\": \"0963967677\",\n\t\"first_name\": \"first_name\",\n\t\"last_name\": \"last_name\",\n\t\"charge_id\": \"ch_1DpsxBDyifgV66lTaA7dOPz7\",\n\t\"address_line_1\": \"ABC\",\n\t\"address_line_2\": \"Can tho\",\n\t\"postcode\": \"555555\",\n\t\"suburb\": \"abc\",\n\t\"state\": \"ABC\",\n\t\"country\": \"ABC\"\n}"
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/order/create",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"order",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List orders",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/order/list?page=1&page_size=10&site=itech",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"order",
+										"list"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "page_size",
+											"value": "10"
+										},
+										{
+											"key": "site",
+											"value": "itech"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Check status",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/order/2/status?site=itech",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"order",
+										"2",
+										"status"
+									],
+									"query": [
+										{
+											"key": "site",
+											"value": "itech"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "order details",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/order/details/6?site=itech",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"order",
+										"details",
+										"6"
+									],
+									"query": [
+										{
+											"key": "site",
+											"value": "itech"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "f5d2f98d-321a-4d34-8965-0e513cccb370",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "8687c138-5c7b-45d4-b2bb-08f944f99b99",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Cart",
+					"item": [
+						{
+							"name": "Remove From Cart",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"product\":28\n}"
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/cart/remove-from-cart",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"cart",
+										"remove-from-cart"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Submit Cart",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/cart/submit/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"cart",
+										"submit",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View Cart",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/cart/view-cart/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"cart",
+										"view-cart",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cart Payment",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"option\":2,\n\t\"token\":\"tok_visa\"\n}"
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/cart/payment",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"cart",
+										"payment"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cart HIstory",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/cart/history",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"cart",
+										"history"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Cart",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"product\":1,\n\t\"amount\":10\n}"
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/cart/update-cart",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"cart",
+										"update-cart"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add To Cart",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"product\":28,\n\t\"amount\":3\n}"
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/cart/add-to-cart",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"cart",
+										"add-to-cart"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Clear Cart",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/cart/clear",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"cart",
+										"clear"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Manage Product Group",
+					"item": [
+						{
+							"name": "Create Product Group",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "company",
+											"value": "1",
+											"description": "company_id",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Lenovoss",
+											"description": "product group name",
+											"type": "text"
+										},
+										{
+											"key": "info",
+											"value": "Lanovo",
+											"description": "product group info",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/productgroup/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"productgroup",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Retrieve Product Group",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/productgroup/1/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"productgroup",
+										"1",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restore Product Group",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/productgroup/restore/1",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"productgroup",
+										"restore",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Product Group",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/productgroup/1/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"productgroup",
+										"1",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Product Group",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\n\t\"name\":\"CPU\",\n\t\"info\":\"info\"\n}"
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/productgroup/1/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"productgroup",
+										"1",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Token (for testing only)",
+					"item": [
+						{
+							"name": "Bank Token",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "country",
+											"value": "AU",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Dave",
+											"type": "text"
+										},
+										{
+											"key": "routing",
+											"value": "110000",
+											"type": "text"
+										},
+										{
+											"key": "account",
+											"value": "000123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/payment/bank-token",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"payment",
+										"bank-token"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Review",
+					"item": [
+						{
+							"name": "Flag",
+							"item": [
+								{
+									"name": "Flag review",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/x-www-form-urlencoded"
+											},
+											{
+												"key": "Authorization",
+												"value": "JWT {{token}}"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "reason",
+													"value": "Spam",
+													"type": "text"
+												},
+												{
+													"key": "review",
+													"value": "4",
+													"type": "text"
+												},
+												{
+													"key": "product",
+													"value": "1",
+													"description": "Check user company",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{Alibaba}}/api/user/flag_review/create",
+											"host": [
+												"{{Alibaba}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"flag_review",
+												"create"
+											]
+										},
+										"description": "All user"
+									},
+									"response": []
+								},
+								{
+									"name": "Delete flag review",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/x-www-form-urlencoded"
+											},
+											{
+												"key": "Authorization",
+												"value": "JWT {{token}}"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "site",
+													"value": "ITECH",
+													"description": "//companies site name",
+													"type": "text"
+												},
+												{
+													"key": "review",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "product",
+													"value": "1",
+													"description": "//Check product company",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{Alibaba}}/api/user/flag_review/1/delete",
+											"host": [
+												"{{Alibaba}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"flag_review",
+												"1",
+												"delete"
+											]
+										},
+										"description": "Only company user"
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Delete Review",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "site",
+											"value": "ITECH",
+											"description": "//site company of the product",
+											"type": "text"
+										},
+										{
+											"key": "product",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/review/17/delete",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"review",
+										"17",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Review",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "rating",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "content",
+											"value": "abcd",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Quocdu",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/review/2/update",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"review",
+										"2",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Undelete Review",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "product",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/review/1/undeleted",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"review",
+										"1",
+										"undeleted"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Retrive Review",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/review/?page_size=10",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"review",
+										""
+									],
+									"query": [
+										{
+											"key": "page_size",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Review",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "asd",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "adward0511@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "rating",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "content",
+											"value": "asdasd",
+											"type": "text"
+										},
+										{
+											"key": "product",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/review/create",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"review",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Review Delete",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/review/list_deleted/product/1?page=1&page_size=10",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"review",
+										"list_deleted",
+										"product",
+										"1"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "page_size",
+											"value": "10"
+										}
+									]
+								},
+								"description": "Only company user"
+							},
+							"response": []
+						},
+						{
+							"name": "List Review",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/review/list/product/2?page=1&page_size=10",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"review",
+										"list",
+										"product",
+										"2"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "page_size",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Update Password",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var data = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"token\", data.token);"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "JWT {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"old_password\":\"user12345\",\r\n  \"new_password\":\"user1234\",\r\n  \"confirm_password\":\"user1234\"\r\n}"
+						},
+						"url": {
+							"raw": "{{Alibaba}}/api/auth/change_pass",
+							"host": [
+								"{{Alibaba}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"change_pass"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "adward0511@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Alibaba}}/api/auth/forgot-password",
+							"host": [
+								"{{Alibaba}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Email Comfirm",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Alibaba}}/api/auth/email-confirm/0b879b9b-2dc0-4737-a4ed-0bd325b285bd",
+							"host": [
+								"{{Alibaba}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"email-confirm",
+								"0b879b9b-2dc0-4737-a4ed-0bd325b285bd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var data = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"token\", data.token);",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Cookie",
+								"value": "token",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "adward0511@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Quocdu@123",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "admin@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "adward",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Alibaba}}/user/login/",
+							"host": [
+								"{{Alibaba}}"
+							],
+							"path": [
+								"user",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "JWT {{token}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "first name",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "last name",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "email@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "+061 9999999999",
+									"type": "text"
+								},
+								{
+									"key": "work_at",
+									"value": "LAVIE COMPANY",
+									"type": "text"
+								},
+								{
+									"key": "job",
+									"value": "CEO",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"value": "",
+									"type": "file"
+								},
+								{
+									"key": "message",
+									"value": "hello world, im working at ITECH",
+									"type": "text"
+								},
+								{
+									"key": "show_phone",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Alibaba}}/api/auth/profile",
+							"host": [
+								"{{Alibaba}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "JWT {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{Alibaba}}/api/auth/profile",
+							"host": [
+								"{{Alibaba}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var data = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"token\", data.token);"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "first_name",
+									"value": "Adward",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Abbey",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "quocduby@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "adward",
+									"type": "text"
+								},
+								{
+									"key": "confirm_password",
+									"value": "adward",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Alibaba}}/api/auth/register/",
+							"host": [
+								"{{Alibaba}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "new_password",
+									"value": "adward",
+									"type": "text"
+								},
+								{
+									"key": "confirm_password",
+									"value": "adward",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Alibaba}}/api/auth/reset-password/6deb80ce-d1c5-4068-bb07-33b5d1c07cf7",
+							"host": [
+								"{{Alibaba}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"reset-password",
+								"6deb80ce-d1c5-4068-bb07-33b5d1c07cf7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Resend Email Confirm",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "adward0511@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Alibaba}}/api/auth/resend-confirm",
+							"host": [
+								"{{Alibaba}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"resend-confirm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "73a12110-e8bf-4e62-a776-7dc34d7ba451",
+								"type": "text/javascript",
+								"exec": [
+									"var data = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"token\", data.token);",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNTM4OTk2MjU5LCJlbWFpbCI6InNoaW55c3VuMjAxMkBnbWFpbC5jb20iLCJvcmlnX2lhdCI6MTUzODk5MjY1OX0.PcH7uLD03YDoG4tvu_AxEZDaI-1F1qGKWtrpuZBjxTA",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Alibaba}}/api-token-refresh/",
+							"host": [
+								"{{Alibaba}}"
+							],
+							"path": [
+								"api-token-refresh",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var data = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"token\", data.token);",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "JWT {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{Alibaba}}/user/logout/",
+							"host": [
+								"{{Alibaba}}"
+							],
+							"path": [
+								"user",
+								"logout",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Manage Category",
+					"item": [
+						{
+							"name": "List Category",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/category/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"category",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restore categories",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/category/restore/5",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"category",
+										"restore",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Category",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/category/5/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"category",
+										"5",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Category",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\":\"Home Furniture- outdoor\",\n  \"info\":\"Home Furniture\"\n\n\n}"
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/category/26/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"category",
+										"26",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Detail Category",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/category/12/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"category",
+										"12",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List DeletedCategory",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/category/deleted/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"category",
+										"deleted",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Category",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Computer",
+											"type": "text"
+										},
+										{
+											"key": "info",
+											"value": "comss",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/category/1/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"category",
+										"1",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Category",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Smartphone",
+											"type": "text"
+										},
+										{
+											"key": "info",
+											"value": "smartphone",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/category/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"category",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Manage Plan",
+					"item": [
+						{
+							"name": "Create Plan",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Gold",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "199",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Large",
+											"type": "text"
+										},
+										{
+											"key": "permission_group",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "interval",
+											"value": "month",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/plan/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"plan",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Plan",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/plan/?page=1&page_size=10",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"plan",
+										""
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "page_size",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Plan",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Silver",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "99",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Medium",
+											"type": "text"
+										},
+										{
+											"key": "permission_group",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "interval",
+											"value": "Month",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/plan/3/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"plan",
+										"3",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Detail Plan",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/plan/1/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"plan",
+										"1",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Manage Package Products",
+					"item": [
+						{
+							"name": "Detail product packages",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/packages/1/details",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"packages",
+										"1",
+										"details"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List product packages",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/packages/list?page_size=10&page=1",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"packages",
+										"list"
+									],
+									"query": [
+										{
+											"key": "page_size",
+											"value": "10"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restore product packages",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "1 Day",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "price",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "Small",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "interval_count",
+											"value": "1",
+											"description": "//số ngày",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/packages/1/restore",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"packages",
+										"1",
+										"restore"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete product packages",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "1 Day",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "price",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "Small",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "interval_count",
+											"value": "1",
+											"description": "//số ngày",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/packages/1/delete",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"packages",
+										"1",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create product packages",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "1 Days",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Small",
+											"type": "text"
+										},
+										{
+											"key": "interval_count",
+											"value": "1",
+											"description": "//số ngày",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/packages/create",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"packages",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List product packages deleted",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/packages/deleted?page=1&page_size=10",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"packages",
+										"deleted"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "page_size",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update product packages",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "10 Day",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Medium",
+											"type": "text"
+										},
+										{
+											"key": "interval_count",
+											"value": "10",
+											"description": "//số ngày",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/packages/1/update",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"packages",
+										"1",
+										"update"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Manage reports",
+					"item": [
+						{
+							"name": "Delete products with reports",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/products/1/reports",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"products",
+										"1",
+										"reports"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Report details",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/products/1/reports/1/details",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"products",
+										"1",
+										"reports",
+										"1",
+										"details"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List reports",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/admin/products/1/reports/list",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"admin",
+										"products",
+										"1",
+										"reports",
+										"list"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Guest",
+			"item": [
+				{
+					"name": "CompanyFeed",
+					"item": [
+						{
+							"name": "Detail CompanyFeed",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/companyfeed/detail/1/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"companyfeed",
+										"detail",
+										"1",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List CompanyFeed",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/companyfeed/list/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"companyfeed",
+										"list",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ProductFeed",
+					"item": [
+						{
+							"name": "List ProductFeed",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/productfeed/list/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"productfeed",
+										"list",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Detail ProductFeed",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/productfeed/detail/53/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"productfeed",
+										"detail",
+										"53",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Company",
+					"item": [
+						{
+							"name": "List Product Of ProductGroup",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Alibaba}}/api/product?site=itech&productgroup=2",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"product"
+									],
+									"query": [
+										{
+											"key": "site",
+											"value": "itech"
+										},
+										{
+											"key": "productgroup",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Product Of Category",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Alibaba}}/api/products/list?site=itech&category=9",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"products",
+										"list"
+									],
+									"query": [
+										{
+											"key": "site",
+											"value": "itech"
+										},
+										{
+											"key": "category",
+											"value": "9"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Detail Company Site",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/company/details?site=itech",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"company",
+										"details"
+									],
+									"query": [
+										{
+											"key": "site",
+											"value": "itech"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Product Group Company Site",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Alibaba}}/api/company/productgroup?site=itech",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"company",
+										"productgroup"
+									],
+									"query": [
+										{
+											"key": "site",
+											"value": "itech"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Company",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Alibaba}}/api/company?site=www",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"company"
+									],
+									"query": [
+										{
+											"key": "site",
+											"value": "www"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Category Company Site",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Alibaba}}/api/company/category?site=itech",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"company",
+										"category"
+									],
+									"query": [
+										{
+											"key": "site",
+											"value": "itech"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Category Company Site Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "company_id",
+											"value": "56",
+											"type": "text"
+										},
+										{
+											"key": "category_id",
+											"value": "28",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/company/update-status-all-company",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"company",
+										"update-status-all-company"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Product Category Company Site",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Alibaba}}/api/company/list-product?site=itech&category_id=3",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"company",
+										"list-product"
+									],
+									"query": [
+										{
+											"key": "site",
+											"value": "itech"
+										},
+										{
+											"key": "category_id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Plan",
+					"item": [
+						{
+							"name": "List Plan",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{Alibaba}}/api/plan/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"plan",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Category",
+					"item": [
+						{
+							"name": "List Category",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/category",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"category"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Company By Multi Category",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"category\":[4,5]\n}"
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/category/list/company/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"category",
+										"list",
+										"company",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Detail Category",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/category/detail/3/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"category",
+										"detail",
+										"3",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Category Copy",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/category/list/",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"category",
+										"list",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search Category",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"key_word\":\"a\",\n  \"category\":\"a\"\n}"
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/category/search/?order_by=-id",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"category",
+										"search",
+										""
+									],
+									"query": [
+										{
+											"key": "order_by",
+											"value": "-id",
+											"description": "//date //name //id"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "Detail Product",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/products/148/details",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"products",
+										"148",
+										"details"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Feature Product",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/products/feature_products",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"products",
+										"feature_products"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Popular Product",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/products/popular_products",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"products",
+										"popular_products"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Product",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/products/list?page=1&page_size=15",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"products",
+										"list"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "page_size",
+											"value": "15"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Random Product",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/products/random_products",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"products",
+										"random_products"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Contacts",
+			"item": [
+				{
+					"name": "Send to admin system",
+					"item": [
+						{
+							"name": "Admin view contacts",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/contacts/list",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"contacts",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Admin view contact details",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/contacts/1/details",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"contacts",
+										"1",
+										"details"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Admin delete contact",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/contacts/2/delete",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"contacts",
+										"2",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Contact to Administrator",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Quoc Du",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "quocduby@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "012345678",
+											"type": "text"
+										},
+										{
+											"key": "subject",
+											"value": "abcd",
+											"type": "text"
+										},
+										{
+											"key": "message",
+											"value": "abbbbbbbbbbbb",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/contacts/create",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"contacts",
+										"create"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Send to User company",
+					"item": [
+						{
+							"name": "User company contact details",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/contacts/5/details",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"contacts",
+										"5",
+										"details"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Contact to Company user",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}",
+										"description": "quest or user",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Quoc Du",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "012345678",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "quocdu@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "message",
+											"value": "AAAAAA",
+											"type": "text"
+										},
+										{
+											"key": "to_user",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Alibaba}}/api/user/contacts/create",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"contacts",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "User company list contact",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/contacts/list?page=1&page_size=3",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"contacts",
+										"list"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "page_size",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "User company delete contact",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "JWT {{token}}"
+									}
+								],
+								"url": {
+									"raw": "{{Alibaba}}/api/user/contacts/5/delete",
+									"host": [
+										"{{Alibaba}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"contacts",
+										"5",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Send mail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT {{token}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "to_email",
+									"value": "adward0511@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "cc_email",
+									"value": "quocduby@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "bcc_email",
+									"value": "ndqdu16056@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "123",
+									"description": "//html form",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Alibaba}}/api/send_mail/",
+							"host": [
+								"{{Alibaba}}"
+							],
+							"path": [
+								"api",
+								"send_mail",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send mail Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT {{token}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "to_email",
+									"value": "adward0511@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "cc_email",
+									"value": "quocduby@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "bcc_email",
+									"value": "ndqdu16056@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "123",
+									"description": "//html form",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Alibaba}}/api/send_mail/admin",
+							"host": [
+								"{{Alibaba}}"
+							],
+							"path": [
+								"api",
+								"send_mail",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "bf86da9b-1f2e-498c-91c2-487a117d20cc",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "cd069f0f-2063-4913-b4c2-96f3938c2fbc",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "058910d8-62f0-4659-b484-3a50dcf1e61d",
+			"key": "Alibaba",
+			"value": "http://localhost:8000",
+			"type": "string"
+		},
+		{
+			"id": "c107b997-f845-42d2-bcac-f160e1324a87",
+			"key": "token",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6IjBhMGJkOGQzLTI5NzItNGI2NC1iMTFjLWU3YTRjNTliNzU3MyIsImV4cCI6MTU0Njg1MDc1MCwiZW1haWwiOiJhZHdhcmQwNTExQGdtYWlsLmNvbSIsIm9yaWdfaWF0IjoxNTQ2ODQ3MTUwfQ.tFiGhgxU5P1XDNHWUFILgyzi4SV_UUCkILLmA39tiqc",
+			"type": "string"
+		},
+		{
+			"id": "7c3fa4e2-0a7b-4339-a43c-b2770659ae82",
+			"key": "Alibaba",
+			"value": "http://api.seekproduct.com",
+			"type": "string"
+		},
+		{
+			"id": "e383bfa9-bed5-479d-ad3f-c06047916608",
+			"key": "token",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ijg3YjVmYjUxLWM4MmYtNDQyYy1hZDlhLTU1YmM1ZWIzNjI5ZSIsImVtYWlsIjoiYWR3YXJkMDUxMUBnbWFpbC5jb20iLCJ1c2VyX2lkIjoyOSwib3JpZ19pYXQiOjE1NDY4Mjg5NjYsImV4cCI6MTU0NjgzMjU2Nn0.vFImQB5G-BJglsDJ1FDKoX6AgZxMwPnGnfTy4EPQA4M",
+			"type": "string"
+		},
+		{
+			"id": "4913aa8c-1727-4d00-bbbd-445f2c959ea4",
+			"key": "token",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkd2FyZDA1MTFAZ21haWwuY29tIiwiZXhwIjoxNTQxMjE3MzEzLCJvcmlnX2lhdCI6MTU0MTIxMzcxMywidXNlcl9pZCI6MjksInVzZXJuYW1lIjoiODdiNWZiNTEtYzgyZi00NDJjLWFkOWEtNTViYzVlYjM2MjllIn0.P44DNVZbTo2jFMYscge8Zz3ZAbQlCb1MNN-5bhAc-Sc",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

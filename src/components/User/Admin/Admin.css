@@ -1,0 +1,249 @@
+/* =============Navbar Admin======================= */
+.n-mt-am25{
+    margin-top: -25px;
+}
+.n-navAd-cardhead h5 button span{
+    float: left;
+}
+.n-navAd-cardhead i{
+    margin-right: 10px;
+}
+.n-navAd-cardhead button{
+    width: 220px;
+}
+.n-navAd-cardhead button:hover{
+    box-shadow: 1.5px 1.5px 1.5px 1.5px #d5d7da;
+    background-color: #5e72e4;
+    color: #fff;
+}
+.n-navAd-cardhead button:focus{
+    box-shadow: 2px 2px 2px 2px #d5d7da;
+    background-color: #5e72e4;
+    color: #fff;
+}
+.n-navAd-cardbody button{
+    width: 195px;
+    margin-left: -50px;
+    text-align: left;
+}
+.n-navAd-cardbody button:hover{
+    background-color: #5e72e4;
+    color: #fff;
+}
+.n-navAd-cardbody button:focus{
+    background-color: #5e72e4;
+    color: #fff;
+}
+/* =========Content========================================================= */ 
+.n-populer-product-cart{
+    width: 250px;
+    height: 320px;
+    margin-bottom: 10px;
+    margin-right: 7px;
+}
+.n-populer-product-cart:hover{
+    box-shadow: 1.5px 1.5px 1.5px 1.5px #eeedf0;
+}
+.n-img-populerpro{
+    width: 100px;
+    max-height: 160px;
+    margin: auto;
+}
+.n-card-img{
+    height: 160px;
+}
+.n-tble{
+    display: block;
+    overflow: auto;
+    /* max-height: 400px; */
+    /* width: 1100px; */
+    border-radius: 7px;
+    padding: 0px;
+    text-align: center;
+}
+.n-tble img{
+    width: 80px;
+}
+.n-table-title{
+    background-color: #5e72e4;
+    color: #fff;
+}
+.n-col{
+    width: 300px;
+}
+.n-col-big{
+    width: 300px;
+}
+.n-Pagination ul li{
+    background-color: burlywood;
+    height: 100px;
+    color: cadetblue;
+}
+.n-navbar-admin{
+    width: 230px;
+}
+.n-navbar-admin button{
+    width: 220px;
+}
+.n-navbar-admin li{
+    display: block;
+    width: 205px;
+    height: 45px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+/* .n-navbar-admin li:hover{   
+     background-color: rgb(248, 248, 248);
+} */
+.n-navbar-admin span{
+    float: left;
+}
+.n-mt-am25{
+    margin-top: -25px;
+}
+.n-icon{
+    margin-right: 10px;
+}
+.n-is-active{
+    background-color: red;
+}
+.n-tble{
+    margin: 0px;
+    height: 350px;
+    width: 100%;
+    display: block;
+    overflow: auto;
+}
+.n-tble th{
+    width: 300px;
+}
+.n-w-100{
+    height: 300px;
+    width: 280px;
+    text-align: center;
+}
+.n-img-populerpro{
+    width: 100px;
+    max-height: 150px;
+    margin: auto;
+}
+.n-img{
+    height: 100px;
+}
+.n-table-title{
+    background-color: #5e72e4;
+    color: #fff;
+}
+.n-button-i{
+    /* font-weight: bold; */
+    font-style: italic;
+}
+.n-button-link:focus{
+    background-color: #5e72e4;
+    color: #fff;
+}
+.n-button-link:hover{
+    background-color: #5e72e4;
+    color: #fff;
+    box-shadow: 2.5px 2.5px 2.5px 2.5px #b4b3b3;
+}
+.n-li_link:hover{
+    background-color: #f5365c;
+    color: #fff;
+    box-shadow: 2.5px 2.5px 2.5px 2.5px #b4b3b3;
+}
+.n-li_link:focus{
+    background-color: #f5365c;
+    color: #fff;
+}
+.n-navbar-admin{
+    width: 230px;
+}
+.n-navbar-admin button{
+    width: 220px;
+}
+.n-navbar-admin li{
+    display: block;
+    width: 205px;
+    height: 45px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.n-navbar-admin li:hover{   
+     background-color: rgb(248, 248, 248);
+}
+.n-navbar-admin span{
+    float: left;
+}
+.n-mt-am25{
+    margin-top: -25px;
+}
+.n-icon{
+    margin-right: 10px;
+}
+
+.form-group label{
+margin-right: 510px;
+}
+#caibunhat{
+    text-align: center;
+}
+#insiput{
+    width: 50%;
+    margin-left: 170px;
+}
+#facebook{
+    color: rgb(37, 37, 192);
+    font-style: italic;
+    font-size: 20px;
+}
+#intagam{
+    color: rgb(184, 26, 184);
+    font-style: italic;
+    font-size: 20px;
+}
+#twiter{
+    color: rgb(21, 137, 231);
+    font-style: initial;
+    font-size: 20px;
+}
+#namekompany{
+    width: 120%;
+    float: left;
+}
+#trial{
+    width: 120%;
+}
+#namekompany h3{
+    margin-right: 100px;
+  
+}
+#hix{
+  
+    margin-right: 150px;
+}
+/* #boody{
+    text-align: center;
+}
+.n-is-active{
+    background-color: red;
+}
+.n-tble{
+    margin: 0px;
+    height: 350px;
+    width: 100%;
+    display: block;
+    overflow: auto;
+}
+.n-tble th{
+    width: 200px;
+}
+.n-w-100{
+    height: 300px;
+    width: 280px;
+    text-align: center;
+}
+.n-img-populerpro{
+    width: 100px;
+    margin: auto;
+}  */

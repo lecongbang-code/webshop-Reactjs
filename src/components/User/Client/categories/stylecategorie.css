@@ -1,0 +1,19 @@
+.categories{
+    text-align: center;
+}
+.linkcategories{
+    width: 100%;
+    margin-left: 5px;
+}
+.categoriesitem{
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    background-color: rgb(233, 232, 231);
+    float: left;
+    text-align: center;
+    padding: 10px;
+}
+.categoriesitem:hover{
+    background-color: rgb(213, 232, 241);
+}
